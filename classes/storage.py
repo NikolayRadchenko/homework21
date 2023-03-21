@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class Storage(ABC):
     def __init__(self, capacity: int):
-        self.items = []
+        self.items = {}
         self.capacity = capacity
 
     @abstractmethod
